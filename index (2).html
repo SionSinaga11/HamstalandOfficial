@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamstaland - $HMLD Meme Coin</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap">
+  <script src="https://cdn.jsdelivr.net/npm/framer-motion/dist/framer-motion.umd.js"></script>
+  <style>
+    :root {
+      --bg-light: #fffbe6;
+      --bg-dark: #1a1a1a;
+      --text-light: #2d2d2d;
+      --text-dark: #f0f0f0;
+      --primary: #f97316;
+      --accent: #9333ea;
+      --hover-glow: rgba(255, 234, 167, 0.8);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(to bottom right, #fffbe6, #ffe0f0);
+      color: var(--text-light);
+      transition: background 0.4s, color 0.4s;
+      text-align: center;
+    }
+    body.dark-mode {
+      background: radial-gradient(circle, #1a1a1a, #121212);
+      color: var(--text-dark);
+    }
+    .dark-mode section {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .toggle-theme {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 1000;
+      box-shadow: 0 0 12px var(--accent);
+    }
+    header {
+      padding: 60px 20px 30px;
+    }
+    header img.logo {
+      width: 120px;
+      animation: float 3s ease-in-out infinite;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #ffcc00;
+    }
+    h1, h2, h3 {
+      margin: 0.4em 0;
+    }
+    p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    .buttons a, button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
+    }
+    .buttons a:hover, button:hover {
+      background: #ea580c;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--hover-glow);
+    }
+    section {
+      padding: 60px 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 40px 40px 0 0;
+      transition: background 0.4s;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      width: 280px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .dark-mode .feature {
+      background: #1e1e1e;
+      color: var(--text-dark);
+    }
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 15px var(--hover-glow);
+    }
+    footer {
+      padding: 40px;
+      font-size: 0.9em;
+      background: #fff7ed;
+    }
+    .dark-mode footer {
+      background: #1a1a1a;
+    }
+    input[type=email] {
+      padding: 10px;
+      width: 300px;
+      max-width: 80%;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: var(--accent);
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ff66cc;
+      box-shadow: 0 0 12px #ffd6fa;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-theme" onclick="document.body.classList.toggle('dark-mode')">
+  🌙
+</button>
+
+<header>
+  <img src="https://assets.onecompiler.app/43kh4e2ck/43kh4gkkh/WhatsApp%20Image%202025-06-01%20at%2020.36.55.jpeg" alt="Hamstaland Logo" class="logo">
+  <h1>Welcome to Hamstaland</h1>
+  <p>The cutest meme coin on the blockchain! 🐹 Buy, HODL, and ride to the moon with $HMLD!</p>
+  <div class="buttons">
+    <a href="#features">Why Hamstaland?</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#subscribe">Get Updates</a>
+    <div class="social-icons">
+  <a href="https://x.com/HamstalandCoin" target="_blank" title="Twitter">
+     Twitter
+  </a>
+  <a href="https://t.me/HamstalandCoin" target="_blank" title="Telegram">
+     Telegram
+  </a>
+</div>
+
+  </div>
+  <div class="social-icons">
+  </div>
+</header>
+
+<section id="features">
+  <h2>Why Hamstaland?</h2>
+  <div class="features">
+    <div class="feature"> <h3>🐹 Community</h3> <p>Meme lovers and hamster fans unite!</p> </div>
+    <div class="feature"> <h3>🎮 Utility</h3> <p>Mini-games, NFT hamsters, and staking soon.</p> </div>
+    <div class="feature"> <h3>🚀 Decentralized</h3> <p>No presale, LP locked, no taxes.</p> </div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <h2>Roadmap</h2>
+  <div class="features">
+    <div class="feature"> <h3>Q2 2025</h3> <ul><li>Launch on Pump.fun</li><li>Build community</li><li>Launch on Dex</li></ul> </div>
+    <div class="feature"> <h3>Q3 2025</h3> <ul><li>Hamster NFTs</li><li>Staking</li><li>Hamstaverse</li></ul> </div>
+    <div class="feature"> <h3>Q4 2025</h3> <ul><li>Hamster Arcade</li><li>Mobile App</li></ul> </div>
+  </div>
+</section>
+
+<section id="subscribe">
+  <h2>Stay Updated</h2>
+  <p>Enter your email to receive news about Hamstaland.</p>
+  <form action="#" method="POST">
+    <input type="email" name="email" placeholder="you@example.com" required>
+    <br><br>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Hamstaland. All rights reserved.
+</footer>
+
+<script>
+  document.querySelectorAll('.feature').forEach((el, i) => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      el.style.opacity = 1;
+      el.style.transform = 'translateY(0)';
+    }, i * 200);
+  });
+
+  // Play sound on hover/click
+  const sound = new Audio('https://cdn.pixabay.com/download/audio/2022/03/15/audio_3fe8f06f7f.mp3?filename=pop-94319.mp3');
+  document.querySelectorAll('.buttons a, button, .social-icons a, .feature').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      sound.currentTime = 0;
+      sound.play();
+    });
+  });
+</script>
+
+</body>
+</html>
